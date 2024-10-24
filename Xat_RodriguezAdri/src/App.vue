@@ -1,11 +1,10 @@
 <script setup>
-import Missatge from './components/Missatge.vue';
 import Xat from './components/Xat.vue';
 </script>
 
 <template>
   <div id="app">
-    <Missatge/>
+    <!-- <Missatge/> -->
     <Xat/>
   </div>
  

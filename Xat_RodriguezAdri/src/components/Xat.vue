@@ -3,8 +3,8 @@
         <h1>Xat entre Usuaris</h1>
         <Missatge :autor="autor" @enviarMissatge="afegirMissatge"/>
         <ul>
-            <li v-for="(missatge, index) in missatges" :key="index">
-                <strong>{{ missatge.autor }};</strong> {{ missatge.text }}
+            <li v-for="(msg, index) in missatges" :key="index">
+                <strong>{{ msg.autor }}: </strong> {{ msg.text }}
             </li>
         </ul>
     </div>
@@ -17,7 +17,7 @@ import Missatge from './Missatge.vue';
 const autor = 'Usuari 1';
 const missatges = ref([]);
 
-const afegirMissatge = (missatge) => {
-    missatges.value.push(missatge);
+const afegirMissatge = (nouMissatge) => {
+    missatges.value.push(nouMissatge);
 };
 </script>

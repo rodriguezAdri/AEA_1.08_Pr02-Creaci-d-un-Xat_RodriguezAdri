@@ -17,17 +17,17 @@ const props = defineProps({
 });
 
 const emit = defineEmits(['enviarMissatge']);
-const missatges = ref('');
+const missatge = ref('');
 
 
 const enviarMissatge = () => {
-    if (missatges.value.trim()){
+    if (missatge.value.trim()){
         const nouMissatge = {
             autor: props.autor,
-            text: missatges.value
+            text: missatge.value
         };
         emit('enviarMissatge', nouMissatge);
-        missatges.value = '';
+        missatge.value = '';
     }
 }
 </script>

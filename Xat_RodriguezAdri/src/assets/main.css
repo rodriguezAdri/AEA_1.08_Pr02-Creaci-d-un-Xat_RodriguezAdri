@@ -1,35 +1,83 @@
-@import './base.css';
+/* styles.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+h1 {
+  text-align: center;
+  background-color: #6c757d; 
+  color: white;
+  padding: 15px 0;
+  margin: 0;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ced4da; 
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+input:focus {
+  border-color: #6c757d; 
+  outline: none;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6c757d; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #5a6268; 
+  transform: scale(1.05);
+}
+
+ul {
+  list-style-type: none;
+  padding: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #e9ecef; 
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #dee2e6; 
+}
+
+strong {
+  color: #6c757d; 
 }
